@@ -58,9 +58,9 @@ namespace Fish_In_Two_Dimensional_Array
             sw.Start();
             // 10 x 10 m
             SolveFishermansProblem(
-                fishToSpawn: 55, // 
+                fishToSpawn: 55,
                 sideOfArea: 10, // 10 x 10 m
-                sideOfNetArea: 3, // 3m
+                sideOfNetArea: 3, // 3 x 3m
                 printFinalMap: true
                 );
            
@@ -69,9 +69,9 @@ namespace Fish_In_Two_Dimensional_Array
 
             // 1 x 1 km
             SolveFishermansProblem(
-                fishToSpawn: 100_000, // 
-                sideOfArea: 1000, // 1km
-                sideOfNetArea: 20, // 20m
+                fishToSpawn: 100_000,
+                sideOfArea: 1000, // 1 x 1 km
+                sideOfNetArea: 30, // 30 x 30 m
                 printFinalMap: false
                 );
             Console.WriteLine($">>Time Elapse {sw.ElapsedMilliseconds}ms\n");
