@@ -48,6 +48,7 @@ namespace Fish_In_Two_Dimensional_Array
             {
                 PrintFishCatchArea(oneKilometerSquaredOfWater, bestCatch, sideOfNetArea);
             }
+
         }
 
         static void Main(string[] args)
@@ -63,7 +64,7 @@ namespace Fish_In_Two_Dimensional_Array
                 printFinalMap: true
                 );
            
-            Console.WriteLine($">>Time Elapse {sw.ElapsedMilliseconds}ms");
+            Console.WriteLine($">>Time Elapse {sw.ElapsedMilliseconds}ms\n");
             sw.Restart();
 
             // 1 x 1 km
@@ -73,7 +74,7 @@ namespace Fish_In_Two_Dimensional_Array
                 sideOfNetArea: 20, // 20m
                 printFinalMap: false
                 );
-            Console.WriteLine($">>Time Elapse {sw.ElapsedMilliseconds}ms");
+            Console.WriteLine($">>Time Elapse {sw.ElapsedMilliseconds}ms\n");
             sw.Stop();
             Console.ReadLine();
         }
